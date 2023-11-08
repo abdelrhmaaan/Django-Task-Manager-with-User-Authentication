@@ -1,0 +1,19 @@
+{% include "bootstrap.html" %}
+<h1> dflkak</h1>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Confirmation Page</h2>
+                    <form method='post'>
+                        {% csrf_token %}
+                    <p class="card-text">Are you sure you want to delete {{task}}?</p>
+                    <input href="" class="btn btn-success" type='submit' value='Yes, Proceed'>
+                    <a href={% url "home" %} class="btn btn-danger">No, Cancel</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
